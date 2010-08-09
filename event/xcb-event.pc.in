@@ -7,5 +7,5 @@ Name: XCB Event library
 Description: XCB event callback interface
 Version: @PACKAGE_VERSION@
 Requires: xcb
-Libs: -L${libdir} -lxcb-event @LIBS@
+Libs: -L${libdir} -lxcb-util @LIBS@
 Cflags: -I${includedir}

@@ -7,5 +7,5 @@ Name: XCB Aux library
 Description: XCB convenient functions
 Version: @PACKAGE_VERSION@
 Requires: xcb
-Libs: -L${libdir} -lxcb-aux @LIBS@
+Libs: -L${libdir} -lxcb-util @LIBS@
 Cflags: -I${includedir}
