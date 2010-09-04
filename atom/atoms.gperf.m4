@@ -12,9 +12,6 @@
 #include <stdarg.h>
 #include "xcb_atom.h"
 
-define(`COUNT', 0)dnl
-define(`DO', `const xcb_atom_t $1 = define(`COUNT', incr(COUNT))COUNT;')dnl
-include(atomlist.m4)`'dnl
 %}
 
 %readonly-tables
