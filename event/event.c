@@ -31,7 +31,13 @@
 #include <string.h>
 
 #include "xcb_event.h"
-#include "../xcb-util-common.h"
+
+#ifdef HAVE_SYS_TYPES_H
+# include <sys/types.h>
+#endif
+
+#define ssizeof(foo)            (ssize_t)sizeof(foo)
+#define countof(foo)            (ssizeof(foo) / ssizeof(foo[0]))
 
 static const char *labelError[] =
 {
