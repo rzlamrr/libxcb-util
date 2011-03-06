@@ -1,7 +1,5 @@
 ACLOCAL_AMFLAGS = -I m4
 
-MAINTAINERCLEANFILES = Makefile.in
-
 SUBDIRS = atom aux event
 
 AM_CFLAGS = $(CWARNFLAGS)
@@ -19,3 +17,15 @@ xcbinclude_HEADERS = xcb_util.h
 pkgconfig_DATA = xcb-util.pc
 
 EXTRA_DIST = xcb-util.pc.in
+
+MAINTAINERCLEANFILES = ChangeLog INSTALL
+
+.PHONY: ChangeLog INSTALL
+
+INSTALL:
+	$(INSTALL_CMD)
+
+ChangeLog:
+	$(CHANGELOG_CMD)
+
+dist-hook: ChangeLog INSTALL
