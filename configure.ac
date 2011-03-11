@@ -19,9 +19,11 @@ AC_TYPE_SSIZE_T
 
 PKG_CHECK_MODULES(XPROTO, xproto >= 7.0.8)
 
-AC_OUTPUT([Makefile xcb-util.pc
-	aux/Makefile aux/xcb-aux.pc
-	atom/Makefile atom/xcb-atom.pc
-	event/Makefile event/xcb-event.pc
-	xcb_util_intro
-	])
+AC_CONFIG_FILES([Makefile
+		src/Makefile
+		xcb-atom.pc
+		xcb-aux.pc
+		xcb-event.pc
+		xcb-util.pc
+		xcb_util_intro])
+AC_OUTPUT
