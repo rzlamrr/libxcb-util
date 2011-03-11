@@ -7,5 +7,5 @@ Name: XCB Util Core library
 Description: XCB util core interface
 Version: @PACKAGE_VERSION@
 Requires: xcb
-Libs: -L${libdir} -lxcb-util @LIBS@
+Libs: -L${libdir} -lxcb-util
 Cflags: -I${includedir}
