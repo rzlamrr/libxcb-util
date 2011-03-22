@@ -5,7 +5,7 @@ AM_CPPFLAGS = $(XCB_CFLAGS)
 AM_CFLAGS = $(CWARNFLAGS)
 
 libxcb_util_la_LIBADD = $(XCB_LIBS)
-libxcb_util_la_LDFLAGS = -version-info 0:0:0
+libxcb_util_la_LDFLAGS = -version-info 0:0:0 -no-undefined
 libxcb_util_la_SOURCES = \
 	atoms.c		\
 	event.c		\
