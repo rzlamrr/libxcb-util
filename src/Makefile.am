@@ -15,7 +15,6 @@ xcbinclude_HEADERS =	\
 	xcb_util.h	\
 	xcb_atom.h	\
 	xcb_aux.h	\
-	xcb_bitops.h	\
 	xcb_event.h
 
 BUILT_SOURCES = atoms.c atoms.gperf xcb_atom.h
