@@ -1,4 +1,3 @@
-
 ACLOCAL_AMFLAGS = -I m4
 
 SUBDIRS = src
@@ -20,3 +19,5 @@ ChangeLog:
 	$(CHANGELOG_CMD)
 
 dist-hook: ChangeLog INSTALL
+
+EXTRA_DIST = autogen.sh
