@@ -10,7 +10,6 @@ AM_INIT_AUTOMAKE([foreign dist-bzip2])
 XCB_UTIL_COMMON([1.4], [1.6])
 
 AC_CHECK_FUNCS_ONCE(vasprintf)
-AC_TYPE_SSIZE_T
 
 PKG_CHECK_MODULES(XPROTO, xproto >= 7.0.8)
 
