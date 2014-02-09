@@ -11,8 +11,6 @@ XCB_UTIL_COMMON([1.4], [1.6])
 
 AC_CHECK_FUNCS_ONCE(vasprintf)
 
-PKG_CHECK_MODULES(XPROTO, xproto >= 7.0.8)
-
 AC_CONFIG_FILES([Makefile
 		src/Makefile
 		xcb-atom.pc
