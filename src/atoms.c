@@ -1,3 +1,8 @@
+
+#ifdef HAVE_CONFIG_H
+#include "config.h"
+#endif
+
 /* Rely on vasprintf (GNU extension) instead of vsnprintf if
    possible... */
 #define _GNU_SOURCE
