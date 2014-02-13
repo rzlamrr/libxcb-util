@@ -16,6 +16,5 @@ AC_CONFIG_FILES([Makefile
 		xcb-atom.pc
 		xcb-aux.pc
 		xcb-event.pc
-		xcb-util.pc
-		xcb_util_intro])
+		xcb-util.pc])
 AC_OUTPUT
