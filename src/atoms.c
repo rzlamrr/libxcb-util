@@ -81,7 +81,7 @@ char *xcb_atom_name_by_resource(const char *base, uint32_t resource)
 char *xcb_atom_name_unique(const char *base, uint32_t id)
 {
 	if(base)
-		return makename("%s_U%lu", base, id);
+		return makename("%s_U%u", base, id);
 	else
-		return makename("U%lu", id);
+		return makename("U%u", id);
 }
