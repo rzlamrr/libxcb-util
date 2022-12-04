@@ -13,6 +13,14 @@
 #include <stdarg.h>
 #include "xcb_atom.h"
 
+#ifndef __has_attribute
+# define __has_attribute(x) 0  /* Compatibility with older compilers. */
+#endif
+
+#if __has_attribute(__format__)                                         \
+    || defined(__GNUC__) && ((__GNUC__ * 100 + __GNUC_MINOR__) >= 203)
+__attribute__((__format__(__printf__,1,2)))
+#endif
 static char *makename(const char *fmt, ...)
 {
 	char *ret;
