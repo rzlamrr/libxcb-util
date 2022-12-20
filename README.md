@@ -13,7 +13,7 @@ you're using and why you aren't in a mental hospital yet. We'd welcome
 patches/suggestions for enhancement and new libraries; Please report any
 issues you find to the freedesktop.org bug tracker, at:
 
-  https://gitlab.freedesktop.org/xorg/lib/libxcb-util/issues
+  https://gitlab.freedesktop.org/xorg/lib/libxcb-util/-/issues
 
 Discussion about XCB occurs on the XCB mailing list:
 
